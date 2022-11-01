@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    
+
+    <title>Gite d'ici</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="Navbar">
+                <div class="Dropdown">
+                    <div class="logo">
+                        <a href=""><img src="Ressources/IconeMoulin.png" alt=""></a>
+                    </div>
+                    <ul>
+                        <li><a href="">Hébergements insolites</a></li>
+                        <li><a href="">Hébergements classiques</a></li>
+                        <li><a href="">Contact</a></li>
+                    </ul>
+                    <div class="Rechercher">
+                        <label for="site-search"></label>
+                        <input type="search" id="site-search" placeholder="Rechercher">
+                        <button class="btn">Rechercher</button>
+                    </div>
+                    <div>
+                        <select name="langue" id="langue">
+                            <option value="fr">FR</option>
+                            <option value="en">EN</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <h1>Gite d'ici</h1>
+    </header>
+
+    <main>
+        <section class="DateReservation">
+            <div class="FormulaireResa">
+                <div>
+                    <label for="Start">Date d'arrivée</label>
+                    <input type="date" id="Start" name="DateDArrivée">
+                </div>
+
+                <div>
+                    <label for="End">Date de départ</label>
+                    <input type="date" name="DateDeDépart" id="End">
+                </div> 
+
+                <div>
+                    <label for="NumberPerson">Nombre de personnes</label>
+                    <input type="number" name="NumberPerson" id="NumberPerson">
+                </div>                 
+                <div><a href="">Chercher</a></div>             
+            </div>              
+        </section>
+
+        <section class="Offre">
+            <article class="Insolite" >
+                    <div class="card-wrapper">
+                        <div class="card">
+                            <div class="card-front">
+                                <h2>Hébergements insolites</h2>
+                                <img src="Ressources/HebergementInsolite.jpg" alt="">
+                                <div class="card-price">
+                                    <span>A partir de 155 €/par jour</span>
+                                </div>
+                                <i class="arrow-icon fas fa-arrow-right"></i>
+                            </div>
+                            <div class="card-back">
+                                <a href="" class="btn">Plus d'infos</a>
+                            </div>
+                        </div>
+                    </div>
+            </article>
+
+
+            <article class="Classique">
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="card-front">
+                            <h2>Hébergements classiques</h2>
+                            <img src="Ressources/HebergementClassique.jpg" alt="">
+                            <div class="card-price">
+                                <span>A partir de 100 €/par jour</span>
+                            </div>
+                            <i class="arrow-icon fas fa-arrow-right"></i>
+                        </div>
+                        <div class="card-back">
+                            <a href="">Plus d'infos</a>
+                        </div>
+                    </div>
+                </div>
+
+            </article>
+            <article class="Prestations">
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="card-front">
+                            <h2>Prestations</h2>
+                            <img src="Ressources/Service.jpg" alt="">
+                            <div class="card-price">
+                                <span>Sur demande</span>
+                            </div>
+                            <i class="arrow-icon fas fa-arrow-right"></i>
+                        </div>
+                        <div class="card-back">
+                            <a href="">Plus d'infos</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </article>
+
+        </section>
+ 
+    </main>
+
+
+
+    <script src="https://kit.fontawesome.com/2680292c94.js" crossorigin="anonymous"></script>
+</body>
+</html>
